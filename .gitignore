@@ -1,0 +1,33 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Research data and generated outputs (never commit local microscopy recordings)
+real_data/
+demo_output/
+results/
+output/
+*.log
+*.mmap
+*.h5
+*.hdf5
+*.tdb/
+# Local astroCaST output folders; synthetic example committed explicitly
+*.roi/
+!examples/demo_precomputed/input/sample_video.roi/
+!examples/demo_precomputed/input/sample_video.roi/event_map.tiff
+
+# Secrets / temporary files
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.DS_Store
